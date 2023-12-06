@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Abin</span><br>From Kerala</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!----about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profilepic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Abin, I am a self taught developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links"><b>Skills</b></p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><b><span>HTML</span></b></li>
+                            <li><b><span>CSS</span></b></li>
+                            <li><b><span>JavaScript</span></b></li>
+                            <li><b><span>Bootstrap</span></b></li>
+                        </ul>
+                        <div class="tab-titles">
+                        <p class="tab-links"><b>Education</b></p>
+                    </div>
+                        <ul>
+                            <li><b>Bachelor of Computer Applications <span>(2020-2023)</span></b></li>
+                            <li><b>Master of Computer Applications <span><br>(2023-2025)</span></b></li>
+                        </ul>
+                    </div>
+                    
+                   
+                    </div>
+                 </div>
+            </div>
+         </div>
+
+<!-------------------------CONTACT------------------------------>
+                    <div id="contact">
+                       
+                                <h1 class="sub-heading">Contact Me</h1>
+                                <div class="main"> 
+                            <div class="notice" id="main-notice">
+                                
+                            </div>
+                            <div class="content">
+                              <div id="circle1" data-note="c" class="circle"><a href="https://www.facebook.com/appu.abhinkallor"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              <div id="circle2" data-note="c-sharp" class="circle" ><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
+                              <div id="circle3" data-note="d" class="circle"><a href="https://www.instagram.com/abin._ps/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                              <div id="circle4" data-note="e" class="circle"><a href="mailto:iabin0203@gmail.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></div>
+                              <div id="circle5" data-note="e-flat" class="circle" ><a href="https://www.linkedin.com/in/abin-ps"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
+                              <i class="fa fa-download" aria-hidden="true"> Download CV</i>
+
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+
+                        
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &#0169 Abin </p>
+                </div>
+            </div>
+        </div>
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+         <script src="script.js"></script>
+         <script>
+            var tablinks = document.getElementByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+    
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablinks.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+         </script>
+</body>
+</html>
