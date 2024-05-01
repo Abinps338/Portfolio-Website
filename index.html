@@ -91,21 +91,81 @@
 <!-------------------------CONTACT------------------------------>
                     <div id="contact">
                        
-                                <h1 class="sub-heading"> Contact & Connect With Me</h1>
                                 <div class="main"> 
-                            <div class="notice" id="main-notice">
+                           
+                            <section id="contact">
+  
+                                <h1 class="section-header">Contact Me</h1>
                                 
-                            </div>
-                            <div class="content">
-                              <div id="circle1" data-note="c" class="circle"><a href="https://www.facebook.com/appu.abhinkallor"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
-                              <div id="circle2" data-note="c-sharp" class="circle" ><a href="https://wa.me/919074217338?text=Hello%2C%20I%20have%20%20a%20question%20about%20your%20service.%20Can%20you%20please%20help%20me%3F"><i class="fa-brands fa-whatsapp"></i></a></div>
-                              <div id="circle3" data-note="d" class="circle"><a href="https://www.instagram.com/abin._ps/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-                              <div id="circle4" data-note="e" class="circle"><a href="mailto:iabin0203@gmail.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></div>
+                                <div class="contact-wrapper">
+                                
+                                <!-- Left contact page --> 
+                                  <div class="leftcontact">
+                                  <form id="contact-form" class="form-horizontal" role="form">
+                                     
+                                    <div class="form-group">
+                                      <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
+                                      </div>
+                                    </div>
                               
-                              <div id="circle5" data-note="e-flat" class="circle" ><a href="https://www.linkedin.com/in/abin-ps"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
-                              <i class="fa fa-download" aria-hidden="true"> Download CV</i>
-
-                            </div>
+                                    <div class="form-group">
+                                      <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+                                      </div>
+                                    </div>
+                              
+                                    <textarea class="form-control" rows="10" placeholder="Enter Your Message" name="message" required></textarea>
+                                    
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                      <div class="alt-send-button">
+                                        <i class="fa fa-paper-plane"></i><span class="send-text">Send</span>
+                                      </div>
+                                    
+                                    </button>
+                                    
+                                  </form>
+                                </div>
+                                  
+                                <!-- Left contact page --> 
+                                  
+                                    <div class="direct-contact-container">
+                              
+                                      <ul class="contact-list">
+                                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Palakkad, Kerala</span></i></li>
+                                        
+                                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+91 9074217338</a></span></i></li>
+                                        
+                                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">abinps338@gmail.com</a></span></i></li>
+                                        
+                                      </ul>
+                              
+                                      <hr>
+                                      <ul class="social-media-list">
+                                        <li><a href="https://github.com/Abinps338" target="_blank" class="contact-icon">
+                                          <i class="fa fa-github" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/in/abin-ps/" target="_blank" class="contact-icon">
+                                          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="https://wa.me/919074217338?text=Hello%2C%20I%20have%20%20a%20question%20about%20your%20service.%20Can%20you%20please%20help%20me%3F"" target="_blank" class="contact-icon">
+                                          <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/abin._ps/" target="_blank" class="contact-icon">
+                                          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>       
+                                      </ul>
+                                      <hr>
+                              
+                                      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                              
+                                    </div>
+                                  
+                                </div>
+                                
+                              </section>  
+                                
+                                
                         </div>
                     </div>
                         
@@ -113,9 +173,6 @@
 
                         
                     </div>
-                </div>
-                <div class="copyright">
-                    <p>Copyright &#0169 Abin </p>
                 </div>
             </div>
         </div>
@@ -138,6 +195,13 @@
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
             }
+            document.querySelector('#contact-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    e.target.elements.name.value = '';
+                    e.target.elements.email.value = '';
+                    e.target.elements.message.value = '';
+                });
+
 
          </script>
 </body>
